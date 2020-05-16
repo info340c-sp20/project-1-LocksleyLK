@@ -1,4 +1,4 @@
-header {
+.home {
   float: left;
   overflow: hidden;
   padding-left: 20px 10px;
@@ -26,6 +26,16 @@ img {
   max-width: 40%;
   float: right;
   padding-bottom: 6px;
+}
+
+.authors {
+  display: block;
+  height: auto;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 h1,
