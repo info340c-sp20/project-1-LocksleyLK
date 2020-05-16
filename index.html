@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>COVID-19 Cases in the United States</title>
+  <meta name="description" content="COVID-19 Cases in the United States">
+  <meta name="author" content="Locksley Kolakowski and Lynzley Kolakowski">
+
+  <link rel="icon" href="images/covidFavicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+  <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+  <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+
+  <script src="js/interactive.js"></script>
+
+</head>
+
+<body>
+    <header class="home">
+        <h1>COVID-19 Cases in the United States</h1>
+    </header>
+    
+    <main>
+    <div>
+        <p></p>
+        <img src="images/COVID.png" alt="Image of COVID-19 Virus">
+        <h2>Interactive graphic display of Current COVID-19 Cases in the United States.</h2>
+        <a href="about.html">About the Creators</a>
+
+        <p>Enter the name of a state to see the number of confurmed cases in that state</p>
+        <p>Toggle a display of deaths caused by COVID-19 by checking the box above the death column.</p>
+
+        <div class="column">
+            <input type="text" id="state" onkeyup="filterState()" placeholder="State">
+    
+            <input checked type="checkbox" id="deathCount" onchange="showDeaths()">
+            <label for="deathCount"> Deaths</label>
+    
+            <!--  Used w3schools as a reference: -->
+            <!-- https://www.w3schools.com/howto/howto_js_filter_table.asp -->
+            <table id="covidTable">
+            <tr class="header">
+                <th style="width:20%;">Date</th>
+                <th style="width:40%;">State</th>
+                <th style="width:20%;">Cases</th>
+                <th style="width:20%;">Deaths</th>
+            </tr>
+            </table>
+        </div>
+        <div class="column">
+            <img src="images/microscopeVirus.jpg" alt="Microscope Scan of COVID-19 Virus from and American Patient" class="virusScan">
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <p>Created by Locksley and Lynzley Kolakowski. May, 2020</p>
+    </footer>
+</body>
+</html>
