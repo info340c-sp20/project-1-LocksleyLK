@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+    <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+    <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+
+    <script src="interactive.js"></script>
+</head>
+<body>
+    <input type="text" id="state" onkeyup="filterState()" placeholder="State">
+
+    <input checked type="checkbox" id="deathCount" onchange="showDeaths()">
+    <label for="deathCount"> Deaths</label>
+
+    <!--  Used w3schools as a reference: -->
+    <!-- https://www.w3schools.com/howto/howto_js_filter_table.asp -->
+    <table id="covidTable">
+    <tr class="header">
+        <th style="width:20%;">Date</th>
+        <th style="width:40%;">State</th>
+        <th style="width:20%;">Cases</th>
+        <th style="width:20%;">Deaths</th>
+    </tr>
+    </table>
+</body>
+</html>
