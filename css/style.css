@@ -1,9 +1,41 @@
+.home {
+  float: left;
+  overflow: hidden;
+  padding-left: 20px 10px;
+  background-color: lightskyblue;
+}
+
 body {
-  padding-left: 12px;
-  padding-right: 400px;
+  padding-left: 25px;
+  padding-right: 25px;
   padding-bottom: 6px;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
     sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  padding-bottom: 6px;
+}
+
+.virusScan {
+  display: block;
+  height: auto;
+  max-width: 40%;
+  float: right;
+  padding-bottom: 6px;
+}
+
+.authors {
+  display: block;
+  height: auto;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 h1,
@@ -19,4 +51,9 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
 }
