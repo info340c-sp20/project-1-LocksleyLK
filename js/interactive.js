@@ -47,7 +47,7 @@ function filterState() {
   }
 }
 
-// This function allows the users to choose whether they see the death count by state due to Covid-19.
+// This function allows the users to choose whether they see the death count by state due to COVID-19.
 function showDeaths() {
     let table = document.getElementById("covidTable");
     let tr = table.getElementsByTagName("tr");
@@ -62,7 +62,7 @@ function showDeaths() {
         th.style.display = "none";
     }
 
-    // When checked, display Covid-19 death column. When unchecked, deaths do not display.
+    // When checked, display Covid-19 death column. When unchecked, COVID-19 deaths do not display.
     for (let i = 0; i < tr.length; i++) {
       let td = tr[i].getElementsByTagName("td")[3];
       if (td) {
