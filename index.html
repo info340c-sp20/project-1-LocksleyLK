@@ -26,6 +26,7 @@
     </header>
     
     <main>
+    <div>
         <p></p>
         <img src="images/COVID.png" alt="Image of COVID-19 Virus">
         <h2>Interactive graphic display of Current COVID-19 Cases in the United States.</h2>
@@ -34,25 +35,27 @@
         <p>Enter the name of a state to see the number of confurmed cases in that state</p>
         <p>Toggle a display of deaths caused by COVID-19 by checking the box above the death column.</p>
 
-
-        <input type="text" id="state" onkeyup="filterState()" placeholder="State">
-
-        <input checked type="checkbox" id="deathCount" onchange="showDeaths()">
-        <label for="deathCount"> Deaths</label>
-
-        <!--  Used w3schools as a reference: -->
-        <!-- https://www.w3schools.com/howto/howto_js_filter_table.asp -->
-        <table id="covidTable">
-        <tr class="header">
-            <th style="width:20%;">Date</th>
-            <th style="width:40%;">State</th>
-            <th style="width:20%;">Cases</th>
-            <th style="width:20%;">Deaths</th>
-        </tr>
-        </table>
-
-
-        <img src="images/microscopeVirus.jpg" alt="Microscope Scan of COVID-19 Virus from and American Patient" class="virusScan">
+        <div class="column">
+            <input type="text" id="state" onkeyup="filterState()" placeholder="State">
+    
+            <input checked type="checkbox" id="deathCount" onchange="showDeaths()">
+            <label for="deathCount"> Deaths</label>
+    
+            <!--  Used w3schools as a reference: -->
+            <!-- https://www.w3schools.com/howto/howto_js_filter_table.asp -->
+            <table id="covidTable">
+            <tr class="header">
+                <th style="width:20%;">Date</th>
+                <th style="width:40%;">State</th>
+                <th style="width:20%;">Cases</th>
+                <th style="width:20%;">Deaths</th>
+            </tr>
+            </table>
+        </div>
+        <div class="column">
+            <img src="images/microscopeVirus.jpg" alt="Microscope Scan of COVID-19 Virus from and American Patient" class="virusScan">
+        </div>
+    </div>
     </main>
 
     <footer>
